@@ -1,7 +1,7 @@
 import os
-TOKEN = os.environ.get("GITLAB_TOKEN_TO_GET_STAT")
+TOKEN = os.environ.get("TOKEN")
 if not TOKEN:
-    raise ValueError("Le token [GITLAB_TOKEN_TO_GET_STAT] n'a pas été trouvé")
+    raise ValueError("Le token [ main.yml > env: TOKEN=[...] ] n'a pas été trouvé")
 import requests
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches

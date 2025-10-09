@@ -22,7 +22,7 @@ jobs:
 
       - name: Run heatmap script
         env:
-          TOKEN: ${{ secrets.TOKEN_TO_PUSH_STAT }}
+          TOKEN: ${{ secrets.GITLAB_TOKEN_TO_GET_STAT }}
         run: python generate_heatmap.py
 
       - name: Commit and push SVG
