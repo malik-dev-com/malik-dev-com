@@ -1,4 +1,6 @@
 ![Heatmap importer de gitlab univ artois](/gitlab_heatmap.svg)
+Voici ma heatmap d'activité GitLab. <br>
+Elle est générée automatiquement chaque nuit en Python grâce à **GitHub Actions**.
 
 # Salut, moi c’est Malik
 
@@ -17,7 +19,7 @@ Pensez aussi à regarder mon [portfolio](https://portfolio.malik-dev.com).
 
 | Linkedin | Email |
 |-------|----------|
-| [LinkedIn](https://linkedin.com/in/malik-babahamou) | contact@malik-dev.com |
+| [Linkedin](https://linkedin.com/in/malik-babahamou) | contact@malik-dev.com |
 
 
 
