@@ -1,53 +1,47 @@
 ![Heatmap importer de gitlab univ artois](/gitlab_heatmap.svg)
 
-# 👋 Salut, moi c’est [Ton Nom]
+# Salut, moi c’est Malik
 
-Bienvenue sur mon profil GitHub ! Ici, vous trouverez mes projets, contributions et un peu de ma personnalité.
-
----
-
-## 🛠 À propos de moi
-
-- Étudiant / Développeur / Passionné de [ton domaine]  
-- Langages : Python, Java, JavaScript, [etc.]  
-- J’aime : Ski, escalade, résoudre des problèmes logiques 🧩  
+Bienvenue sur mon profil GitHub ! <br>
+Pensez aussi à regarder mon [portfolio](https://portfolio.malik-dev.com).
 
 ---
 
-## 📊 Statistiques
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=malik-dev-com&show_icons=true&theme=radical)
+## Statistiques
 
 ![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=malik-dev-com&layout=compact&theme=radical)
 
-> *Remplace `TON_USERNAME` par ton nom GitHub pour afficher tes stats réelles.*
+---
+
+## Contact
+
+| Linkedin | Email |
+|-------|----------|
+| [LinkedIn](https://linkedin.com/in/malik-babahamou) | contact@malik-dev.com |
+
+
 
 ---
 
-## 🚀 Projets récents
+## Compétences
 
-| Nom du projet | Description | Lien |
-|---------------|------------|------|
-| Projet 1      | Courte description | [GitHub](https://github.com/malik-dev-com/projet1) |
-| Projet 2      | Courte description | [GitHub](https://github.com/malik-dev-com/projet2) |
-| Projet 3      | Courte description | [GitHub](https://github.com/malik-dev-com/projet3) |
+### Languages
+![Java](https://img.shields.io/badge/Java-black?logo=openjdk)
+![JavaScript](https://img.shields.io/badge/JavaScript-black?logo=javascript)
+![PHP](https://img.shields.io/badge/PHP-black?logo=php)
+![HTML](https://img.shields.io/badge/HTML-black?logo=html5)
+![CSS](https://img.shields.io/badge/CSS-black?logo=css3)
+![Bash](https://img.shields.io/badge/bash-black?logo=gnubash&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PSQL-black?logo=postgresql)
+![Python](https://img.shields.io/badge/Python-black?logo=python)
 
----
+### Frameworks
+![Laravel](https://img.shields.io/badge/Laravel-black?logo=laravel)
+![Flask](https://img.shields.io/badge/Flask-black?logo=flask)
 
-## 📅 Activité
+### Outils
+![JetBrains Suite](https://img.shields.io/badge/JetBrains-black?logo=jetbrains)
+![Git](https://img.shields.io/badge/Git-black?logo=git)
+![Sublime Text](https://img.shields.io/badge/Sublime_Text-black?logo=sublimetext)
+![UML](https://img.shields.io/badge/UML-black?logo=uml&logoColor=white)
 
-Ici tu peux mettre ton heatmap GitLab/GitHub ou un graphique des contributions. Exemple :
-
-![Heatmap](gitlab_heatmap.svg)
-
----
-
-## 📫 Contact
-
-- Email : ton.email@example.com  
-- LinkedIn : [Ton profil](https://linkedin.com/in/tonprofil)  
-- Portfolio : [tonsite.com](https://tonsite.com)
-
----
-
-*✨ Merci de visiter mon profil !*
