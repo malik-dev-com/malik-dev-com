@@ -33,4 +33,4 @@ jobs:
           git commit -m "Mise à jour heatmap $(date +'%d/%m/%y')" || echo "No changes"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_TO_PUSH_STAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
