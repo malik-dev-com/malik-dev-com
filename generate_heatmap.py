@@ -46,8 +46,8 @@ counter = Counter(dates)
 
 # === Créer une grille sur 1 an ===
 today = datetime.today().date()
-start_date = today - timedelta(days=365)
-all_days = [start_date + timedelta(days=i) for i in range(366)]
+start_date = today - timedelta(days=182)
+all_days = [start_date + timedelta(days=i) for i in range(183)]
 
 weeks = (len(all_days) + 6) // 7
 heatmap = np.zeros((7, weeks), dtype=int)
