@@ -17,7 +17,7 @@ USERNAME = "malik_babahamou"
 headers = {"PRIVATE-TOKEN": TOKEN}
 
 # === Trouver l'utilisateur ===
-user_resp = requests.get(f"{GITLAB_URL}/a pi/v4/users?username={USERNAME}", headers=headers)
+user_resp = requests.get(f"{GITLAB_URL}/api/v4/users?username={USERNAME}", headers=headers)
 users = user_resp.json()
 if not users:
     raise ValueError("Impossible de trouver l'utilisateur.")
