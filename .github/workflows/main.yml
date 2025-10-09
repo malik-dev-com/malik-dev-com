@@ -2,7 +2,7 @@ name: Update Heatmap
 
 on:
   schedule:
-    - cron: '0 8 * * *' # tous les jours à 08:00 UTC
+    - cron: '0 4 * * *' # tous les jours à 04:00 UTC donc 06:00 / 05:00 en France (UTC+2 / UTC+1)
   workflow_dispatch: # permet de lancer manuellement
 
 permissions:
