@@ -8,6 +8,8 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.GITLAB_TOKEN_TO_GET_STAT }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -21,17 +23,11 @@ jobs:
         run: pip install requests matplotlib numpy
 
       - name: Run heatmap script
-        env:
-          TOKEN: ${{ secrets.GITLAB_TOKEN_TO_GET_STAT }}
         run: python generate_heatmap.py
 
       - name: Commit and push SVG
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          git add gitlab_heatmap.svg
-          git commit -m "Mise à jour heatmap $(date +'%d/%m/%y')" || echo "No changes"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          force: true
