@@ -1,0 +1,36 @@
+name: Update Heatmap
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # tous les jours à 08:00 UTC
+  workflow_dispatch: # permet de lancer manuellement
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.13
+
+      - name: Install dependencies
+        run: pip install requests matplotlib numpy
+
+      - name: Run heatmap script
+        env:
+          TOKEN: ${{ secrets.TOKEN_TO_PUSH_STAT }}
+        run: python generate_heatmap.py
+
+      - name: Commit and push SVG
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add gitlab_heatmap_violet_dark_grid_1x1.svg
+          git commit -m "Mise à jour heatmap $(date +'%d/%m/%y')" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_TO_PUSH_STAT }}
