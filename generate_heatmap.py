@@ -104,12 +104,7 @@ ax.set_xticks([])
 date_maj = datetime.now().strftime("%d / %m / %y")
 ax.set_title(f"Activité GitLab de {USERNAME} (mis à jour le : {date_maj})", color="#f0f0f0")
 
-# === Ajouter un tag invisible (force un changement unique chaque jour) ===
-timestamp = datetime.now().isoformat()
-ax.text(-1, -1, f"generated={timestamp}", fontsize=1, color="#222222")  # invisible
-
 plt.tight_layout()
-plt.savefig("gitlab_heatmap.svg", facecolor="#222222", bbox_inches="tight")
-plt.close(fig)
+plt.savefig("gitlab_heatmap.svg", facecolor="#222222")
 
-print(f"Heatmap gitlab générée : gitlab_heatmap.svg ({timestamp})")
+print("Heatmap gitlab générée : gitlab_heatmap.svg")
