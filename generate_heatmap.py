@@ -107,4 +107,4 @@ ax.set_title(f"Activité GitLab de {USERNAME} (mis à jour le : {date_maj})", co
 plt.tight_layout()
 plt.savefig("gitlab_heatmap.svg", facecolor="#222222")
 
-print("📊 Heatmap violet dark générée : gitlab_heatmap_violet_dark_grid_1x1_rounded.svg")
+print("Heatmap gitlab générée : gitlab_heatmap.svg")
